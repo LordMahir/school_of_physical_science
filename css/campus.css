@@ -1,0 +1,23 @@
+.text{
+	background-color: #e3e3e3;
+	text-align: justify;
+}
+.image{
+	padding: 10px 10px;
+	height: 250px;
+}
+p{
+	padding: 10px 10px;
+	font-weight: 550;
+}
+
+h3{
+	text-align: center;
+}
+.campus-info{
+	font-weight: 550;
+	text-align: justify;
+}
+li{
+	padding-bottom: 10px;
+}

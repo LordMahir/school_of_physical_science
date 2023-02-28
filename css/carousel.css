@@ -1,0 +1,112 @@
+/* body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  * {
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;;
+  } */
+  
+  .carousel-slider {
+    position: relative;
+  }
+  
+  .carousel-slider__container {
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+  }
+  .carousel-slider__container.dragging {
+  scroll-behavior: auto;
+  cursor: grabbing;
+  }
+  .carousel-slider__container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel-slider__item {
+    padding: 16px 8px;
+    flex: 0 0 auto;
+    width: calc(100% / 5);
+  }
+  
+  .carousel-slider__container[data-step="4"] .carousel-slider__item {
+    width: calc(100% / 4);
+  }
+  
+  .carousel-slider__container[data-step="3"] .carousel-slider__item {
+    width: calc(100% / 3);
+  }
+  
+  .carousel-slider__container[data-step="2"] .carousel-slider__item {
+    width: calc(100% / 2);
+  }
+  
+  .carousel-slider__container[data-step="1"] .carousel-slider__item {
+    width: calc(100% / 1);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .carousel-slider__item,
+    .carousel-slider__container[data-step="4"] .carousel-slider__item {
+      width: calc(100% / 3);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carousel-slider__item,
+    .carousel-slider__container[data-step="4"] .carousel-slider__item,
+    .carousel-slider__container[data-step="3"] .carousel-slider__item {
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .carousel-slider__item,
+    .carousel-slider__container[data-step="4"] .carousel-slider__item,
+    .carousel-slider__container[data-step="3"] .carousel-slider__item,
+    .carousel-slider__container[data-step="2"] .carousel-slider__item {
+      width: calc(100% / 1);
+    }
+  }
+  
+  /* .carousel-slider__control {
+    font-size: 24px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .3s;
+  } */
+  
+  /* .carousel-slider__control.prev {
+    left: 16px;
+  }
+  
+  .carousel-slider__control.next {
+    right: 16px;
+  }
+  
+  .carousel-slider__control:hover {
+    opacity: 1;
+  } */
+  
+  .carousel-slider__item img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+  }
+  
